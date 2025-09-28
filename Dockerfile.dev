@@ -1,0 +1,25 @@
+# Development Dockerfile with hot reload
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Install nodemon globally for hot reload
+RUN npm install -g nodemon
+
+# Copy package files
+COPY package*.json ./
+COPY tsconfig.json ./
+COPY nodemon.json ./
+
+# Install all dependencies (including dev dependencies)
+RUN npm install
+
+# Copy source files (will be overridden by volume mount in development)
+COPY src ./src
+COPY tailwind.config.js ./
+
+# Expose port
+EXPOSE 3000
+
+# Start the application with nodemon for hot reload
+CMD ["npm", "run", "dev"]

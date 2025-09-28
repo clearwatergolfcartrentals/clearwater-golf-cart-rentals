@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearwater Golf Cart Rentals - Beach Cart Rentals</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <img src="/golfcart_silhouette.png" alt="Logo" class="h-10 w-10">
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">Beach Cart Rentals</h1>
+                        <p class="text-xs text-gray-500">Clearwater Beach</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#carts" class="text-gray-700 hover:text-sky-600">Our Carts</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-sky-600">Pricing</a>
+                    <a href="#contact" class="text-gray-700 hover:text-sky-600">Contact</a>
+                    <a href="tel:727-555-2278" class="bg-sky-500 text-white px-5 py-2 rounded-lg hover:bg-sky-600">
+                        (727) 555-CART
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-sky-500 to-blue-600 text-white py-16 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative">
+            <div class="flex flex-col items-center">
+                <div class="max-w-3xl w-full">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center">
+                        Golf Cart Rentals in Clearwater Beach
+                    </h1>
+                    <p class="text-xl mb-8 text-sky-50 text-center">
+                        Explore the beach in style. Free delivery. Best prices guaranteed.
+                    </p>
+
+                    <!-- Quick Search -->
+                    <div class="bg-white rounded-lg p-4 shadow-xl mb-8">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <select class="px-3 py-2 border rounded text-gray-700 text-sm">
+                                <option>Cart Size</option>
+                                <option>2 Seater</option>
+                                <option>4 Seater</option>
+                                <option>6 Seater</option>
+                            </select>
+                            <select class="px-3 py-2 border rounded text-gray-700 text-sm">
+                                <option>Type</option>
+                                <option>Electric</option>
+                                <option>Gas</option>
+                            </select>
+                            <select class="px-3 py-2 border rounded text-gray-700 text-sm">
+                                <option>Duration</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                            </select>
+                            <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 text-sm font-semibold">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Resources Section -->
+                    <div class="text-center">
+                        <h3 class="text-lg font-semibold mb-3 text-sky-100">Resources</h3>
+                        <div class="flex flex-wrap gap-3 justify-center">
+                            <a href="#clearwater" class="bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg transition-colors">
+                                Clearwater
+                            </a>
+                            <a href="#palm-harbor" class="bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg transition-colors">
+                                Palm Harbor
+                            </a>
+                            <a href="#safety-harbor" class="bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg transition-colors">
+                                Safety Harbor
+                            </a>
+                            <a href="#dunedin" class="bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg transition-colors">
+                                Dunedin
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bar -->
+    <section class="bg-white py-4 border-b">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div>
+                    <p class="text-2xl font-bold text-sky-600">50+</p>
+                    <p class="text-sm text-gray-600">Golf Carts</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold text-sky-600">Free</p>
+                    <p class="text-sm text-gray-600">Delivery</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold text-sky-600">$49</p>
+                    <p class="text-sm text-gray-600">Daily Rate</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold text-sky-600">24/7</p>
+                    <p class="text-sm text-gray-600">Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Golf Cart Grid -->
+    <section id="carts" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-2 text-gray-900">Available Golf Carts</h2>
+            <p class="text-gray-600 mb-8">Choose from our premium fleet</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cart 1 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 rounded-t-lg flex items-center justify-center">
+                        <img src="/golfcart_red_four_seats.png" alt="Standard 4-Seater" class="h-full w-full object-contain p-4">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Standard 4-Seater</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Electric</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                            </svg>
+                            4 Passengers
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">$69</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <button onclick="openQuoteModal()" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-600 text-sm">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart 2 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg flex items-center justify-center relative">
+                        <span class="absolute top-2 right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">Popular</span>
+                        <img src="/golfcart_blue_six_seats.png" alt="Beach Cruiser 6" class="h-full w-full object-contain p-4">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Beach Cruiser 6</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Electric</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                            </svg>
+                            6 Passengers
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">$89</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <button onclick="openQuoteModal()" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-600 text-sm">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart 3 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-green-100 to-green-200 rounded-t-lg flex items-center justify-center">
+                        <img src="/golfcart_beige_two_seats.png" alt="Compact 2-Seater" class="h-full w-full object-contain p-4">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Compact 2-Seater</h3>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Gas</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                            </svg>
+                            2 Passengers
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">$49</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <button onclick="openQuoteModal()" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-600 text-sm">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart 4 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-200 rounded-t-lg flex items-center justify-center">
+                        <img src="/golfcart_red_four_seats.png" alt="Luxury 4-Seater" class="h-full w-full object-contain p-4">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Luxury 4-Seater</h3>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Gas</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                            </svg>
+                            4 Passengers
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">$99</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <button onclick="openQuoteModal()" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-600 text-sm">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart 5 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-red-100 to-orange-100 rounded-t-lg flex items-center justify-center">
+                        <img src="/golfcart_blue_six_seats.png" alt="Family XL" class="h-full w-full object-contain p-4">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Family XL</h3>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Gas</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                            </svg>
+                            6 Passengers
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">$109</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <button onclick="openQuoteModal()" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-600 text-sm">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart 6 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-teal-100 to-cyan-200 rounded-t-lg flex items-center justify-center">
+                        <img src="/golfcart_beige_two_seats.png" alt="Sport 2-Seater" class="h-full w-full object-contain p-4">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-semibold text-lg">Sport 2-Seater</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Electric</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                            </svg>
+                            2 Passengers
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-gray-900">$59</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <button onclick="openQuoteModal()" class="bg-sky-500 text-white px-4 py-2 rounded hover:bg-sky-600 text-sm">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <button class="text-sky-600 hover:text-sky-700 font-medium">
+                    View All Carts →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Pricing -->
+    <section id="pricing" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Simple Pricing</h2>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="border rounded-lg p-6 text-center">
+                    <h3 class="text-xl font-semibold mb-2">Daily</h3>
+                    <p class="text-3xl font-bold text-sky-600 mb-1">$49-109</p>
+                    <p class="text-gray-500 text-sm mb-4">per day</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ Free Delivery</li>
+                        <li>✓ Insurance Included</li>
+                        <li>✓ 24hr Support</li>
+                    </ul>
+                </div>
+
+                <div class="border-2 border-sky-500 rounded-lg p-6 text-center relative">
+                    <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-sky-500 text-white px-3 py-1 rounded text-xs">BEST VALUE</span>
+                    <h3 class="text-xl font-semibold mb-2">Weekly</h3>
+                    <p class="text-3xl font-bold text-sky-600 mb-1">$299-649</p>
+                    <p class="text-gray-500 text-sm mb-4">per week</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ Save 30%</li>
+                        <li>✓ Priority Support</li>
+                        <li>✓ Free Upgrades</li>
+                    </ul>
+                </div>
+
+                <div class="border rounded-lg p-6 text-center">
+                    <h3 class="text-xl font-semibold mb-2">Monthly</h3>
+                    <p class="text-3xl font-bold text-sky-600 mb-1">Custom</p>
+                    <p class="text-gray-500 text-sm mb-4">Call for pricing</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ Best Rates</li>
+                        <li>✓ Flexible Terms</li>
+                        <li>✓ VIP Service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Why Choose Us</h2>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Premium Fleet</h3>
+                    <p class="text-sm text-gray-600">Well-maintained, clean carts</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Best Prices</h3>
+                    <p class="text-sm text-gray-600">Guaranteed lowest rates</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Free Delivery</h3>
+                    <p class="text-sm text-gray-600">We deliver to your location</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-sky-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Book?</h2>
+                <p class="text-xl mb-8 text-sky-100">Call now or request a quote online</p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white/10 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold mb-4">Call Us</h3>
+                        <a href="tel:727-555-2278" class="text-3xl font-bold hover:text-sky-100">
+                            (727) 555-CART
+                        </a>
+                        <p class="mt-2 text-sky-100">Available 7 days a week</p>
+                    </div>
+
+                    <div class="bg-white/10 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold mb-4">Visit Us</h3>
+                        <p>Clearwater Beach, FL</p>
+                        <p class="text-sky-100">Mon-Sun: 7AM - 7PM</p>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <button onclick="openQuoteModal()" class="bg-white text-sky-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 mr-4">
+                        Request Quote
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-sky-600">
+                        View Calendar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-semibold mb-3">Beach Cart Rentals</h3>
+                    <p class="text-sm">Your trusted golf cart rental service in Clearwater Beach since 2020.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#carts" class="hover:text-white">Our Carts</a></li>
+                        <li><a href="#pricing" class="hover:text-white">Pricing</a></li>
+                        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Service Areas</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Clearwater Beach</li>
+                        <li>Palm Harbor</li>
+                        <li>Safety Harbor</li>
+                        <li>Dunedin</li>
+                        <li>Sand Key</li>
+                        <li>Indian Rocks</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Contact</h4>
+                    <p class="text-sm">
+                        (727) 555-CART<br>
+                        info@beachcartrentals.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 text-center text-sm">
+                <p>&copy; 2024 Beach Cart Rentals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Quote Request Modal -->
+    <div id="quoteModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="sticky top-0 bg-white border-b px-6 py-4 flex justify-between items-center">
+                <h2 class="text-2xl font-bold text-gray-900">Request a Quote</h2>
+                <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <form id="quoteForm" class="p-6 space-y-6">
+                <!-- Contact Information Section -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Contact Information</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
+                            <input type="text" name="firstName" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
+                            <input type="text" name="lastName" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                            <input type="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Phone *</label>
+                            <input type="tel" name="phone" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rental Preferences Section -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Rental Details</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Rental Start Date *</label>
+                            <input type="date" name="rentalDate" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Return Date *</label>
+                            <input type="date" name="returnDate" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Cart Size *</label>
+                            <select name="cartSize" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                                <option value="">Select Size</option>
+                                <option value="2">2 Seater</option>
+                                <option value="4">4 Seater</option>
+                                <option value="6">6 Seater</option>
+                                <option value="unsure">Not Sure</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Cart Type</label>
+                            <select name="cartType" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                                <option value="">No Preference</option>
+                                <option value="electric">Electric</option>
+                                <option value="gas">Gas</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Number of Carts</label>
+                            <input type="number" name="quantity" min="1" value="1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Delivery Location Section -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Delivery Location</h3>
+                    <p class="text-sm text-gray-600 mb-4">We deliver to your location. Please provide the address where you'd like the golf cart(s) delivered.</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Street Address</label>
+                            <input type="text" name="streetAddress" placeholder="123 Beach Road or Hotel/Resort Name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">City</label>
+                            <input type="text" name="city" placeholder="Clearwater Beach" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">State</label>
+                            <select name="state" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                                <option value="FL" selected>Florida</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">ZIP Code</label>
+                            <input type="text" name="zipCode" placeholder="33767" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Delivery Time Preference</label>
+                            <select name="deliveryTime" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                                <option value="">No Preference</option>
+                                <option value="morning">Morning (8AM-12PM)</option>
+                                <option value="afternoon">Afternoon (12PM-5PM)</option>
+                                <option value="evening">Evening (5PM-7PM)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Information Section -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Additional Information</h3>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Special Requests or Comments</label>
+                        <textarea name="comments" rows="4" placeholder="Tell us about your specific needs, event details, or any questions you have..." class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" name="childSeats" class="mr-2">
+                            <span class="text-sm text-gray-700">Need child seats</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" name="accessories" class="mr-2">
+                            <span class="text-sm text-gray-700">Interested in accessories (coolers, phone holders, etc.)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" name="eventRental" class="mr-2">
+                            <span class="text-sm text-gray-700">This is for a special event</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="flex gap-4 pt-4">
+                    <button type="submit" class="flex-1 bg-sky-500 text-white py-3 rounded-lg font-semibold hover:bg-sky-600 transition-colors">
+                        Submit Quote Request
+                    </button>
+                    <button type="button" onclick="closeQuoteModal()" class="px-6 py-3 border border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-colors">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openQuoteModal() {
+            document.getElementById('quoteModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeQuoteModal() {
+            document.getElementById('quoteModal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('quoteModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeQuoteModal();
+            }
+        });
+
+        // Handle form submission
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Collect form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            // Here you would normally send this to your backend
+            console.log('Quote Request:', data);
+
+            // Show success message
+            alert('Thank you for your quote request! We will contact you within 24 hours.');
+
+            // Close modal and reset form
+            closeQuoteModal();
+            this.reset();
+        });
+    </script>
+</body>
+</html>
