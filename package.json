@@ -7,6 +7,7 @@
     "dev": "nodemon",
     "build": "tsc && npm run build:css",
     "build:css": "tailwindcss -i ./src/styles/input.css -o ./dist/public/styles.css",
+    "build:pages": "npm run build:css && mkdir -p docs && cp -r src/public/* docs/ && cp dist/public/styles.css docs/ && cp CNAME docs/",
     "start": "node dist/server.js",
     "watch:css": "tailwindcss -i ./src/styles/input.css -o ./dist/public/styles.css --watch"
   },
