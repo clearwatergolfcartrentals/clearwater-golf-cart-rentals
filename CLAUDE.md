@@ -137,7 +137,7 @@ The application is containerized and ready for deployment to:
 
 ## Contact
 Project created for Clearwater Golf Cart Rentals
-Location: Clearwater Beach, FL
+Location: Clearwater, FL
 
 ---
 *This document should be updated as the project evolves to maintain accurate documentation for future development and maintenance.*
